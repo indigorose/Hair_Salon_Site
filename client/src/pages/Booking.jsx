@@ -33,7 +33,7 @@ const Booking = () => {
 //Handle form submission, preventing all default HTML actions.
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const response = await fetch('http://localhost:5000/api/bookings', {
+        const response = await fetch('http://localhost:5001/api/bookings', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -79,7 +79,7 @@ const Booking = () => {
                 value={date}
                 required
                 />
-                <p>Selected Date: {date.toLocateDateString()}</p>
+                <p>Selected Date: {date.toLocaleDateString()}</p>
 
                 {/* Service dropdown */}
                 <label htmlFor="services">Services</label>
