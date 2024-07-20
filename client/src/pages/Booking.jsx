@@ -28,6 +28,7 @@ const Booking = () => {
     const [date, setDate] = useState(new Date())
     const [service, setService] = useState('')
     const [stylist, setStylist] = useState('')
+    const navigate = useNavigate();
 
 
 //Handle form submission, preventing all default HTML actions.
